@@ -1,6 +1,6 @@
 # VMAF
 
-Dockerfile for https://github.com/Netflix/vmaf
+Dockerfile for https://github.com/Netflix/vmaf based on Ubuntu 16.04 and built from source.
 
 ## Usage
 
@@ -15,7 +15,7 @@ docker run --rm -v $(pwd):/input jrottenberg/ffmpeg -i /input/file2.mkv -c:v raw
 Then run vmaf:
 
 ```
-docker run --rm -v $(pwd):/input shamelesscookie/vmaf run_vmaf yuv420p 1920 1080 /input/file1.yuv /input/file2.yuv --out-fmt json
+docker run --rm -v $(pwd):/input shamelesscookie/vmaf yuv420p 1920 1080 /input/file1.yuv /input/file2.yuv --out-fmt json
 ```
 
 Analysis will take some time. 1 minute of 1080p30 is approx. 10 minutes to analyze on average CPU.
