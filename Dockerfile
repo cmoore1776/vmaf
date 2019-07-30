@@ -6,6 +6,7 @@ ENV \
 
 RUN \
   apt-get update -qq && \
+  apt-get upgrade -y && \
   apt-get install -y --no-install-recommends build-essential git python python-setuptools python-dev python-tk \
   python-numpy python-scipy python-matplotlib python-sklearn \
   ipython ipython-notebook python-pandas python-sympy python-nose && \
